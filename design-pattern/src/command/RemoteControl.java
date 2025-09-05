@@ -30,12 +30,12 @@ public class RemoteControl {
 
     @Override
     public String toString() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("\n------ 리모컨 -------\n");
+        StringBuffer sb = new StringBuffer();
+        sb.append("\n------ 리모컨 -------\n");
         for (int i = 0; i < onCommands.length; i++) {
-            stringBuffer.append("[slot " + i + "]" + onCommands[i].getClass().getName() + "   " + offCommands[i].getClass().getName() + "\n");
+            sb.append("[slot " + i + "]" + onCommands[i].getClass().getName() + "   " + offCommands[i].getClass().getName() + "\n");
         }
 
-        return stringBuffer.toString();
+        return sb.toString();
     }
 }
