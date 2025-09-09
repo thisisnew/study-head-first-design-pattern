@@ -3,13 +3,11 @@ package command;
 public class RemoteControlTest {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();
-        LightOnCommand lightOn = new LightOnCommand(new Light());
 
-        remote.setCommand(lightOn);
+        remote.setCommand(new LightOnCommand(new Light()));
         remote.buttonWasPressed();
 
-        GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(new GarageDoor());
-        remote.setCommand(garageDoorOpenCommand);
+        remote.setCommand(new GarageDoorOpenCommand(new GarageDoor()));
         remote.buttonWasPressed();
     }
 }
