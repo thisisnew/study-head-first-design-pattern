@@ -31,7 +31,7 @@ public class RemoteControl {
     @Override
     public String toString() {
         StringBuffer sb = new StringBuffer();
-        sb.append("\n------ 리모컨 -------\n");
+        sb.append("\n------ 리모컨 ------\n");
 
         for (int i = 0; i < onCommands.length; i++) {
             sb.append("[slot ")
