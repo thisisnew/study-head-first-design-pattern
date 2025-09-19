@@ -6,6 +6,6 @@ public class GarageDoor {
     }
 
     public void close() {
-        System.out.println("Close");
+        System.out.println("close");
     }
 }
